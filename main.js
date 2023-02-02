@@ -3,7 +3,7 @@
 
 document.addEventListener("DOMContentLoaded", function() {
   var num_launchers = 20;
-  var num_flares = 20;
+  var num_flares = 15;
   var flare_colours = ['red', 'aqua', 'violet', 'yellow', 'lightgreen', 'white', 'blue'];
   var cssIdx = document.styleSheets.length - 1;
 
@@ -79,5 +79,4 @@ document.addEventListener("DOMContentLoaded", function() {
     document.getElementById("stage").appendChild(newdiv);
   }
 }, false);
-
 

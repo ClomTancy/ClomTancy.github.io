@@ -1,6 +1,5 @@
 <html>
-<!-- /u/rustylikeafox -->
-<!-- onsale:yes -->
+
 <title>
 Clom Tancy's personal shit post
 </title>
@@ -8,24 +7,43 @@ Clom Tancy's personal shit post
   <link rel="stylesheet" type="text/css" href="main.css">
 
  
-  <link rel="stylesheet" href="main.css">
+
+
+
 </head>
 
 <body>
+  <script>
+  document.body.addEventListener("click", function (evt) {
+    console.dir(this);
+    //note evt.target can be a nested element, not the body element, resulting in misfires
+    console.log(evt.target);
+
+    var elm = evt.target;
 
 
-<audio id="player" preload="auto" autoplay loop controls>
-    <source src="clomsong.wav" type="audio/wav">
-    Sucks. Your browser does not support the audio element.
-  </audio>
+  var source = document.getElementById('player');
+  source.play();
 
+  var source = document.getElementById('player2');
+  source.play();
+});
+  </script>
+
+
+
+<script type="text/javascript" src="main.js"></script>
 <div id="stage">
 GET CLOMMED!
 </div>
 
-<script type="text/javascript" src="main.js"></script>
+<center>
+<div style="width: 50%; align-self: center; align-content: center;"><p> click to have another </p></div>
+</center>
+
+
 </body>
-<span class="blinkRed">
+<span class="blinkWhite">
   clommed
 </span>
 <br>
@@ -46,7 +64,7 @@ h1 {
 p {
 	text-align: center;
 	font-size: 24px;
-	font-family: "Comic Sans MS", "Comic Sans", cursive;
+	font-family: "Comic Sans MS", "Comic Sans";
 	padding: 0;
 	margin: 0;
 	border: 30px solid pink;
@@ -62,7 +80,7 @@ body {
 }
 div {
 	font-size:69px;
-	font-family: "Comic Sans MS", "Comic Sans", cursive;
+	font-family: "Comic Sans MS", "Comic Sans";
 	font-style: italic;
 	
 }
@@ -82,17 +100,17 @@ marquee {
 
 <body>
 </br>
-<audio id="player" preload="auto" autoplay loop controls>
+<audio id="player2" preload="auto" autoplay>
   <source src="One liner 2.wav" type="audio/wav">
   Sucks. Your browser does not support the audio element.
 </audio>
 
 <h1>
 
-<div>
+<div style="align-items: center; vertical-align: center;">
 <img class="notSpooky" src="spooky.gif" alt="This spooky skeletal is to remind us that death is unescapable, lingering near at all times." />
 
-y e s   y o u   w e r e
+   <span style="padding-bottom: 50px;">  y e s   y o u   w e r e  </span>
 
 <img class="vspooky" src="spooky.gif" alt="This spooky skeletal is to remind us that death is unescapable, lingering near at all times." />
 </div>
@@ -167,6 +185,12 @@ y e s   y o u   w e r e
   
   <img class="santa" src="santa.png" alt="clommed" />
   
+
+  <audio id="player" preload="auto" autoplay loop controls>
+    <source src="clomsong.wav" type="audio/wav">
+    Sucks. Your browser does not support the audio element.
+  </audio>
+
   </body>
   
   </html>
