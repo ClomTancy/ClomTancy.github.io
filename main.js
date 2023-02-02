@@ -79,3 +79,5 @@ document.addEventListener("DOMContentLoaded", function() {
     document.getElementById("stage").appendChild(newdiv);
   }
 }, false);
+
+
