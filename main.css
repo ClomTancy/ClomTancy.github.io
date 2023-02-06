@@ -481,15 +481,15 @@ legend {
   box-shadow: var(--shadow);
   position: relative;
   width: 75%;
-  height: 75%;
-  transform: translate(0, 10%);
+  height: 60%;
+  transform: translate(0, 0%);
   background-color: green;
   background-size: 600%;
   background-image: var(--Mainbkg);
   background-position: 0px 0px;
   background-repeat: repeat-x;
   overflow: hidden;
-  animation: back 120s alternate infinite steps(2000);
+  animation: back 15s alternate infinite steps(2000);
 }
 
 .contain {
@@ -580,7 +580,7 @@ legend {
   }
 
   to {
-    transform: translate3D(0em, 0em, 0em) rotateX(0deg) rotateY(180deg)
+    transform: translate3D(0em, 0em, 0em) rotateX(60deg) rotateY(180deg)
       rotateZ(0deg);
   }
 }
@@ -592,7 +592,7 @@ legend {
   }
 
   to {
-    transform: translate3D(0em, 0em, 0em) rotateX(0deg) rotateY(180deg)
+    transform: translate3D(0em, 0em, 0em) rotateX(60deg) rotateY(180deg)
       rotateZ(0deg);
   }
 }
