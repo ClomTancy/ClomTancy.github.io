@@ -969,7 +969,12 @@ image gallery end
 ************************************************************************************************/ 
 
 
-
+.clom-background{
+	background-color:rgb(4, 200, 226);
+	opacity:0.7;
+	box-shadow:rgb(243, 0, 243) 2px 15px 105px;
+  width: 75%;
+}
 
 
 
