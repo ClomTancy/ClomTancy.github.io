@@ -80,3 +80,82 @@ document.addEventListener("DOMContentLoaded", function() {
   }
 }, false);
 
+
+const back = document.querySelector(".back");
+
+function changebackground() {
+  let x = document.getElementById("bkgs").value;
+  let dList = document.styleSheets[0].cssRules[0].style;
+  dList.setProperty("--borderbkg1", x);
+  console.log(dList);
+}
+function changebackground1() {
+  let x = document.getElementById("bkgs1").value;
+  let dList = document.styleSheets[0].cssRules[0].style;
+  dList.setProperty("--borderbkg3", x);
+  console.log(dList);
+}
+function changebackground3() {
+  let x = document.getElementById("bkgs2").value;
+  let dList = document.styleSheets[0].cssRules[0].style;
+  dList.setProperty("--Mainbkg", x);
+  console.log(dList);
+}
+function bordersplit1() {
+  let y = document.getElementById("borderInside").value;
+  let dList = document.styleSheets[0].cssRules[0];
+  y = y + "%";
+  dList.style.setProperty("--split2", y);
+  console.log(y);
+}
+function bordersplit() {
+  let y = document.getElementById("borderAdjust").value;
+  let dList = document.styleSheets[0].cssRules[0];
+  y = y + "%";
+  dList.style.setProperty("--split1", y);
+  console.log(y);
+}
+function borderWidth1() {
+  console.log("start");
+  let y = document.getElementById("borderWidth1").value;
+  console.log(y);
+  let dList = document.styleSheets[0].cssRules[0];
+  y = y + "rem";
+  dList.style.setProperty("--widthone", y);
+}
+function borderWidth2() {
+  console.log("start");
+  let z = document.getElementById("borderWidth2").value;
+  console.log(z);
+  let dList = document.styleSheets[0].cssRules[0];
+  z = z + "px";
+  dList.style.setProperty("--ibWidth", z);
+}
+
+function randomIntFromInterval(min, max) { // min and max included 
+  return Math.floor(Math.random() * (max - min + 1) + min)
+}
+
+
+function Randompics() {
+  let bkg = document.querySelectorAll(".photon-shader");
+
+  let randPic = [];
+  for (let h in bkg) {
+
+   let i = randomIntFromInterval(1, 20)
+   randPic.push("url('./imgs/" + i +".png')");
+    bkg[h].style = "background-image:" + randPic[i] + "; background-repeat: no-repeat; background-size: 100% ;   background-position: center;";
+
+    
+  }
+}
+
+
+
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  console.log("Hello World!");
+  Randompics();
+});
