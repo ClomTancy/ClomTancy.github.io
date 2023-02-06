@@ -145,6 +145,7 @@ function Randompics() {
 
    let i = randomIntFromInterval(1, 20)
    randPic.push("url('./imgs/" + i +".png')");
+   console.log( randPic[i])
     bkg[h].style = "background-image:" + randPic[i] + "; background-repeat: no-repeat; background-size: 100% ;   background-position: center;";
 
     
